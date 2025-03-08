@@ -40,54 +40,57 @@ const Home = () => {
     <div className="min-h-screen bg-page-background relative">
       {/* Hero Section with Image Carousel */}
       <div className="relative z-10">
-      <Swiper
-  modules={[Autoplay, EffectFade]}
-  effect={'fade'}
-  spaceBetween={50}
-  slidesPerView={1}
-  autoplay={{
-    delay: 5000,
-    disableOnInteraction: false,
-  }}
-  className="aspect-[16/9] w-full"
->
-{heroImages.map((image, index) => (
-  <SwiperSlide key={index} className="relative">
-    <div className="absolute inset-0 z-0 flex items-center justify-center">
-      {index === heroImages.length - 1 ? (
-        // Logo slide
-        <div className="w-full h-full bg-page-background flex items-center">
-          <div className="w-1/2 h-full flex items-center justify-center ml-0">
-            <img 
-              src={image} 
-              alt="Zephyr Houndz Logo" 
-              className="max-w-[70%] max-h-[70%] object-contain"
-            />
-          </div>
-        </div>
-      ) : (
-        // Regular image slides (unchanged)
-        <>
-          <img 
-            src={image} 
-            alt={`Zephyr Houndz Grooming ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black opacity-30"></div>
-        </>
-      )}
-    </div>
-  </SwiperSlide>
-))}
-</Swiper>
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          effect={'fade'}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          className="aspect-[16/9] w-full"
+        >
+          {heroImages.map((image, index) => (
+            <SwiperSlide key={index} className="relative">
+              <div className="absolute inset-0 z-0 flex items-center justify-center">
+                {index === heroImages.length - 1 ? (
+                  // Logo slide
+                  <div className="w-full h-full bg-page-background flex items-center">
+                    <div className="w-1/2 h-full flex items-center justify-center ml-0">
+                      <img 
+                        src={image} 
+                        alt="Zephyr Houndz Logo" 
+                        className="max-w-[70%] max-h-[70%] object-contain"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  // Regular image slides
+                  <>
+                    <img 
+                      src={image} 
+                      alt={`Zephyr Houndz Grooming ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black opacity-30"></div>
+                  </>
+                )}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
         {/* Overlay Content */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4 md:top-[30%]">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            Zephyr Houndz Dog Grooming
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4 
+          md:top-[30%] 
+          sm:top-[50%] 
+          top-[70%]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+        Zephyr Houndz Dog Grooming
         </h1>
-        <p className="text-base sm:text-xl text-white max-w-2xl mx-auto mb-4 drop-shadow-md">
-            A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond grooming—treating each dog like family in a calm, stress-free environment.
+        <p className="text-xs sm:text-sm md:text-base text-white max-w-2xl mx-auto mb-4 drop-shadow-md">
+        A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond grooming—treating each dog like family in a calm, stress-free environment.
         </p>
           
           {/* Contact and Location */}
