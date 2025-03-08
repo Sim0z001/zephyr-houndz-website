@@ -19,7 +19,7 @@ const Navigation = () => {
         <a href="/" className="flex items-center" onClick={closeMobileMenu}>
           <div className="w-16 h-16 rounded-full overflow-hidden">
             <img 
-              src="/src/assets/images/zephyr-logo.png" 
+              src="/images/zephyr-logo.png" 
               alt="Zephyr Houndz" 
               className="w-full h-full object-cover"
             />

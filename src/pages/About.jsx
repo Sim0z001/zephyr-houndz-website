@@ -64,7 +64,7 @@ const About = () => {
               <div className="relative mt-6">
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img 
-                    src="/src/assets/images/about/megan-profile.webp" 
+                    src="/images/about/megan-profile.webp" 
                     alt="Megan - Professional Dog Groomer" 
                     className="w-full h-full object-cover"
                   />
@@ -118,7 +118,7 @@ const About = () => {
               <div className="relative mt-6">
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img 
-                    src="/src/assets/images/about/simon-profile.webp" 
+                    src="/images/about/simon-profile.webp" 
                     alt="Team Member - Bath Specialist" 
                     className="w-full h-full object-cover"
                   />
@@ -138,7 +138,7 @@ const About = () => {
               <div>
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-4">
                   <img 
-                    src="/src/assets/images/about/dog1.webp" 
+                    src="/images/about/dog1.webp" 
                     alt="Our Greyhound" 
                     className="w-full h-full object-cover"
                   />
@@ -152,7 +152,7 @@ const About = () => {
               <div>
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-4">
                   <img 
-                    src="/src/assets/images/about/dog2.webp" 
+                    src="/images/about/dog2.webp" 
                     alt="Our other furry family member" 
                     className="w-full h-full object-cover contrast-125 brightness-100"
                   />

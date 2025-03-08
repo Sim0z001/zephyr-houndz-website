@@ -18,7 +18,7 @@ const Services = () => {
           {/* First Price List Image */}
           <div className="bg-white rounded-3xl p-6 shadow-lg mb-8">
             <img 
-              src="/src/assets/images/price-list-1.jpg" 
+              src="/images/price-list-1.jpg" 
               alt="Zephyr Houndz Full Groom and Tidy Groom Price List" 
               className="w-full h-auto rounded-2xl"
             />
@@ -27,7 +27,7 @@ const Services = () => {
           {/* Second Price List Image */}
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <img 
-              src="/src/assets/images/price-list-2.jpg" 
+              src="/images/price-list-2.jpg" 
               alt="Zephyr Houndz Bath Services and Add-on Price List" 
               className="w-full h-auto rounded-2xl"
             />

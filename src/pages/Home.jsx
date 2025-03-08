@@ -27,14 +27,13 @@ const Home = () => {
     }
   ];
 
-  // Import images
   const heroImages = [
-    '/src/assets/images/banner/banner_1.webp',
-    '/src/assets/images/banner/banner_2.webp',
-    '/src/assets/images/banner/banner_3.webp',
-    '/src/assets/images/banner/banner_4.webp',
-    '/src/assets/images/banner/banner_5.webp',
-    '/src/assets/images/banner/banner_6.webp'
+    '/images/banner/banner_1.webp',
+    '/images/banner/banner_2.webp',
+    '/images/banner/banner_3.webp',
+    '/images/banner/banner_4.webp',
+    '/images/banner/banner_5.webp',
+    '/images/banner/banner_6.webp'
   ];
 
   return (
