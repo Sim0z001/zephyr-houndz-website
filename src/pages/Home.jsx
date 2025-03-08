@@ -1,32 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
-import { Dog, Scissors, Bath } from 'lucide-react';
-import ServiceCard from '../components/ServiceCard';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const Home = () => {
-  const services = [
-    {
-      icon: <Dog className="w-12 h-12 text-zephyr-ashbrown" />,
-      title: 'Full Grooming',
-      description: 'Complete grooming package including bath, brush, and styling.',
-    },
-    {
-      icon: <Scissors className="w-12 h-12 text-zephyr-ashbrown" />,
-      title: 'Trim & Style',
-      description: 'Precision cut and styling to keep your pup looking sharp.',
-    },
-    {
-      icon: <Bath className="w-12 h-12 text-zephyr-ashbrown" />,
-      title: 'Bath & Brush',
-      description: 'Basic cleaning and coat maintenance for your furry friend.',
-    }
-  ];
-
   const heroImages = [
     '/images/banner/banner_1.webp',
     '/images/banner/banner_2.webp',
@@ -81,17 +61,14 @@ const Home = () => {
           ))}
         </Swiper>
 
-        {/* Overlay Content */}
+        {/* Overlay Content - Contact Info */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4 
           md:top-[30%] 
           sm:top-[50%] 
-          top-[70%]">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
-        Zephyr Houndz Dog Grooming
-        </h1>
-        <p className="text-xs sm:text-sm md:text-base text-white max-w-2xl mx-auto mb-4 drop-shadow-md">
-        A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond grooming—treating each dog like family in a calm, stress-free environment.
-        </p>
+          top-[60%]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+            Zephyr Houndz Dog Grooming
+          </h1>
           
           {/* Contact and Location */}
           <div className="flex justify-center items-center space-x-4 sm:space-x-6 mb-8 flex-wrap">
@@ -99,7 +76,12 @@ const Home = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span className="text-sm sm:text-base text-white">0475 455 654</span>
+              <a 
+                href="tel:0475455654" 
+                className="text-sm sm:text-base text-white"
+              >
+                0475 455 654
+              </a>
             </div>
             <div className="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -124,19 +106,14 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Services Section */}
-      <section className="relative z-10 pt-16 pb-16">
+        {/* Description Section */}
+        <section className="relative z-10 py-16 bg-page-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-zephyr-ashbrown mb-12">
-            Our Services
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
-            {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
-            ))}
-          </div>
+            <p className="text-base sm:text-lg text-zephyr-ashbrown text-center">
+            A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond grooming—treating each dog like family in a calm, stress-free environment. Our two-person team ensures every dog receives personalized attention and expert grooming.
+            </p>
         </div>
-      </section>
+        </section>
     </div>
   );
 };

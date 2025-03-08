@@ -112,7 +112,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="name" 
-                    name="user_name" // Updated for EmailJS template
+                    name="user_name"
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-zephyr-mint"
@@ -127,7 +127,7 @@ const Contact = () => {
                   <input 
                     type="email" 
                     id="email" 
-                    name="user_email" // Updated for EmailJS template
+                    name="user_email"
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-zephyr-mint"
@@ -145,7 +145,7 @@ const Contact = () => {
                 <input 
                   type="tel" 
                   id="phone" 
-                  name="user_phone" // Added for EmailJS template
+                  name="user_phone"
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-zephyr-mint"
@@ -160,7 +160,7 @@ const Contact = () => {
                 </label>
                 <textarea 
                   id="message" 
-                  name="message" // Keep as "message" for EmailJS template
+                  name="message"
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-zephyr-mint"
@@ -201,10 +201,20 @@ const Contact = () => {
                 <p className="text-gray-700 mb-2">
                   <span className="flex items-center">
                     <Phone className="w-4 h-4 mr-2" />
-                    0475 455 654
+                    <a href="tel:0475455654" className="hover:underline">
+                      0475 455 654
+                    </a>
                   </span>
                 </p>
-                <p className="text-gray-700 mb-2">Email: zephyrhoundz@gmail.com</p>
+                <p className="text-gray-700 mb-2">
+                  Email: 
+                  <a 
+                    href="mailto:zephyrhoundz@gmail.com" 
+                    className="ml-2 hover:underline"
+                  >
+                    zephyrhoundz@gmail.com
+                  </a>
+                </p>
                 <div className="flex space-x-4 mt-4">
                   <a 
                     href="https://www.facebook.com/profile.php?id=61567924250405" 

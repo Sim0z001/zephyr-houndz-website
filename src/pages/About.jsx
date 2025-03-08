@@ -15,7 +15,10 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div>
                 <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-4">
-                  Meet Megan
+                Dog Stylist
+                </h2>
+                <h2 className="text-2xl font-bold text-zephyr-ashbrown mb-4">
+                  Megan
                 </h2>
                 <p className="text-gray-700 mb-4">
                 With over 5 years of experience working at high-end dog grooming salons across Australia, 
@@ -80,7 +83,10 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div>
                 <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-4">
-                  Meet Your Bath Specialist
+                Bath & Prep Expert
+                </h2>
+                <h2 className="text-2xl font-bold text-zephyr-ashbrown mb-4">
+                Simon
                 </h2>
                 <p className="text-gray-700 mb-4">
                 I’ve grown up with dogs my whole life and currently have a Dutch Shepherd. With experience handling

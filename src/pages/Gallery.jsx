@@ -59,7 +59,7 @@ const Gallery = () => {
       ]
     },
     { 
-      title: 'Double/Triple-Coated', 
+      title: 'Bath & Deshed', 
       description: 'De-Shedding & Deep Moisturizing Treatment – Leaves Fur Mat-Free & Tangle-Free',
       images: [
         '/images/gallery/webp/working-dogs-1.webp',
@@ -69,8 +69,8 @@ const Gallery = () => {
       ]
     },
     {
-        title: 'Tidy & DeShed', 
-        description: 'Precise trimming and intensive de-shedding to maintain coat health and reduce excess fur.',
+        title: 'Tidy & Deshed', 
+        description: 'Handscissoring trims loose hair, desheds the coat, and includes a moisturising treatment for a healthy, shiny finish',
         images: [
           '/images/gallery/webp/tidy_and_deshed_1.webp',
           '/images/gallery/webp/tidy_and_deshed_2.webp',
