@@ -34,7 +34,7 @@ const Services = () => {
           </div>
           
           <p className="text-center mt-6 text-zephyr-ashbrown font-medium italic">
-            Note: 10% surcharge applied on Saturday
+            Coat condition and pricing will be double checked upon arrival
           </p>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
 
 const Home = () => {
   const heroImages = [
@@ -16,8 +17,29 @@ const Home = () => {
     '/images/banner/banner_6.webp'
   ];
 
+  const promotions = [
+    {
+      title: 'Refer a Friend',
+      description: "Spread the love for your furry friends and enjoy the rewards. Refer a friend and you'll both receive $10 off coupon per referal.",
+      buttonText: 'Learn More',
+      buttonLink: 'https://www.facebook.com/share/p/1A8YkKcpCa/'
+    },
+    {
+      title: 'E-Vouchers Available',
+      description: 'Give the gift of pampering! Our e-vouchers are the perfect present for dog lovers. Convenient, thoughtful, and always appreciated.',
+      buttonText: 'Buy Now',
+      buttonLink: 'https://app.squareup.com/gift/ML633ZCJDWT29/order'
+    },
+    {
+      title: '4 Paws Rescue Discount',
+      description: 'Support local rescue! 10% off the first visit for dogs adopted from 4 Paws Animal Rescue. Help us celebrate these special furry friends and their forever homes.',
+      buttonText: 'Learn More',
+      buttonLink: 'https://www.facebook.com/share/p/1EMQbXjgQV/'
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-page-background relative">
+    <div className="min-h-screen bg-page-background flex flex-col">
       {/* Hero Section with Image Carousel */}
       <div className="relative z-10">
         <Swiper
@@ -106,14 +128,59 @@ const Home = () => {
         </div>
       </div>
 
-        {/* Description Section */}
-        <section className="relative z-10 py-16 bg-page-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-            <p className="text-base sm:text-lg text-zephyr-ashbrown text-center">
-            A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond grooming—treating each dog like family in a calm, stress-free environment. Our two-person team ensures every dog receives personalized attention and expert grooming.
-            </p>
+      {/* Description Section */}
+      <section className="relative z-10 bg-page-background flex-grow">
+        <div className="container mx-auto px-4 max-w-4xl h-full flex items-center justify-center py-8 md:py-16">
+          <p className="text-sm sm:text-base md:text-lg text-zephyr-ashbrown text-center">
+            A cozy, home-based studio specializing in breed styling. We provide individualized care that goes beyond 
+            grooming—treating each dog like family in a calm, stress-free environment. Our two-person team ensures 
+            every dog receives personalized attention and expert grooming.
+          </p>
         </div>
-        </section>
+      </section>
+
+      {/* Promotions Carousel Section */}
+      <section className="relative z-10 bg-zephyr-mint bg-opacity-20 py-8 md:py-12">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            pagination={{ 
+              clickable: true,
+              dynamicBullets: true 
+            }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="promotions-swiper"
+          >
+            {promotions.map((promo, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-3xl shadow-lg p-6 md:p-8">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-zephyr-ashbrown text-center mb-4">
+                    {promo.title}
+                  </h2>
+                  <p className="text-sm sm:text-base text-zephyr-ashbrown text-center mb-4">
+                    {promo.description}
+                  </p>
+                  <div className="text-center">
+                    <a 
+                      href={promo.buttonLink}
+                      className="inline-block bg-zephyr-mint text-white px-6 py-2 rounded-full font-bold 
+                      hover:bg-opacity-90 transition-colors"
+                    >
+                      {promo.buttonText}
+                    </a>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
     </div>
   );
 };

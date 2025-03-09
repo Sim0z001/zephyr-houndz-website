@@ -37,7 +37,11 @@ const Booking = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-zephyr-mint rounded-full mr-2 mt-2"></span>
-                    <span>Arrive on time for your appointment to ensure a stress-free experience</span>
+                    <span>For more than one dog appointment, please add a note in the booking to let us know</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-zephyr-mint rounded-full mr-2 mt-2"></span>
+                    <span>Please read and sign our service agreement. it will be sent to you via txt after booking request</span>
                   </li>
                 </ul>
               </div>
