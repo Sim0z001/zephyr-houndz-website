@@ -20,7 +20,7 @@ const Home = () => {
   const promotions = [
     {
       title: 'Refer a Friend',
-      description: "Spread the love for your furry friends and enjoy the rewards. Refer a friend and you'll both receive $10 off coupon per referal.",
+      description: "Spread the love for your furry friends and enjoy the rewards. Refer a friend and you'll receive $10 off coupon per referal.",
       buttonText: 'Learn More',
       buttonLink: 'https://www.facebook.com/share/p/1A8YkKcpCa/'
     },
