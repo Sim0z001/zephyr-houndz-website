@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Gallery = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -105,99 +106,115 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-page-background">
-      <div className="container mx-auto px-4 pb-16"> {/* Added negative margin-top */}
-        <h1 className="text-5xl font-bold text-center text-zephyr-ashbrown mb-4"> 
-          Our Grooming Gallery
-        </h1>
+    <>
+      {/* Add Helmet for SEO */}
+      <Helmet>
+        <title>Gallery & Testimonials | Zephyr Houndz Dog Grooming</title>
+        <meta name="description" content="View our portfolio of dog grooming transformations. See the Zephyr Houndz difference with before and after photos showcasing our professional grooming work and read what our happy clients have to say." />
+        <meta name="keywords" content="dog grooming gallery, pet grooming portfolio, Mountain Creek dog grooming, grooming styles, dog grooming reviews" />
+        <meta property="og:title" content="Gallery & Testimonials | Zephyr Houndz Dog Grooming" />
+        <meta property="og:description" content="View our portfolio of dog grooming transformations and client testimonials." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.zephyrhoundz.com.au/gallery" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Zephyr Houndz Dog Grooming Gallery" />
+        <meta name="twitter:description" content="View our portfolio of dog grooming transformations and client testimonials." />
+      </Helmet>
 
-        {/* Gallery Categories */}
-        {galleryCategories.map((category, index) => (
-          <section key={index} className="mb-12"> {/* Reduced margin bottom further */}
-            <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-1 text-center">
-              {category.title}
+      <div className="bg-page-background">
+        <div className="container mx-auto px-4 pb-16"> {/* Added negative margin-top */}
+          <h1 className="text-5xl font-bold text-center text-zephyr-ashbrown mb-4"> 
+            Our Grooming Gallery
+          </h1>
+
+          {/* Gallery Categories */}
+          {galleryCategories.map((category, index) => (
+            <section key={index} className="mb-12"> {/* Reduced margin bottom further */}
+              <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-1 text-center">
+                {category.title}
+              </h2>
+              <p className="text-center text-gray-600 mb-3">{category.description}</p> {/* Reduced margin */}
+              <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                {/* Rest of the code remains the same */}
+                {category.images.map((image, imgIndex) => (
+                  <div 
+                    key={imgIndex} 
+                    className="bg-white rounded-3xl shadow-lg overflow-hidden"
+                  >
+                    <div className="relative" style={{ paddingBottom: '150%' }}>
+                      <img 
+                        src={image} 
+                        alt={`${category.title} ${imgIndex + 1}`} 
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+
+          {/* Testimonials Carousel */}
+          <section className="mt-8">
+            <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-8 text-center">
+              What Our Clients Say
             </h2>
-            <p className="text-center text-gray-600 mb-3">{category.description}</p> {/* Reduced margin */}
-            <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              {/* Rest of the code remains the same */}
-              {category.images.map((image, imgIndex) => (
-                <div 
-                  key={imgIndex} 
-                  className="bg-white rounded-3xl shadow-lg overflow-hidden"
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-white rounded-3xl shadow-lg relative overflow-hidden h-[200px]">
+                {/* Previous Button */}
+                <button 
+                  onClick={prevTestimonial}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-zephyr-ashbrown hover:text-opacity-80 z-10"
                 >
-                  <div className="relative" style={{ paddingBottom: '150%' }}>
-                    <img 
-                      src={image} 
-                      alt={`${category.title} ${imgIndex + 1}`} 
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+                  &#10094;
+                </button>
+
+                {/* Next Button */}
+                <button 
+                  onClick={nextTestimonial}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-zephyr-ashbrown hover:text-opacity-80 z-10"
+                >
+                  &#10095;
+                </button>
+
+                {/* Testimonial Container */}
+                <div 
+                  className={`absolute top-0 left-0 w-full h-full flex items-center px-12 transition-all duration-1000 ease-in-out ${
+                    isTransitioning ? 'opacity-0 translate-x-full' : 'opacity-100 translate-x-0'
+                  }`}
+                >
+                  <img 
+                    src={testimonials[currentTestimonial].image} 
+                    alt={testimonials[currentTestimonial].name} 
+                    className="w-24 h-24 rounded-full mr-8 flex-shrink-0"
+                  />
+                  <div>
+                    <p className="text-gray-600 mb-2 italic">
+                      "{testimonials[currentTestimonial].text}"
+                    </p>
+                    <div className="flex mb-2">
+                      {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                        <svg 
+                          key={i} 
+                          className="w-5 h-5 text-[#6e5c4f]" 
+                          fill="currentColor" 
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-zephyr-ashbrown font-bold font-['Dancing_Script'] text-1xl">
+                      - {testimonials[currentTestimonial].name}
+                    </p>
                   </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-
-        {/* Testimonials Carousel */}
-        <section className="mt-8">
-          <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-8 text-center">
-            What Our Clients Say
-          </h2>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-3xl shadow-lg relative overflow-hidden h-[200px]">
-              {/* Previous Button */}
-              <button 
-                onClick={prevTestimonial}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-zephyr-ashbrown hover:text-opacity-80 z-10"
-              >
-                &#10094;
-              </button>
-
-              {/* Next Button */}
-              <button 
-                onClick={nextTestimonial}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-zephyr-ashbrown hover:text-opacity-80 z-10"
-              >
-                &#10095;
-              </button>
-
-              {/* Testimonial Container */}
-              <div 
-                className={`absolute top-0 left-0 w-full h-full flex items-center px-12 transition-all duration-1000 ease-in-out ${
-                  isTransitioning ? 'opacity-0 translate-x-full' : 'opacity-100 translate-x-0'
-                }`}
-              >
-                <img 
-                  src={testimonials[currentTestimonial].image} 
-                  alt={testimonials[currentTestimonial].name} 
-                  className="w-24 h-24 rounded-full mr-8 flex-shrink-0"
-                />
-                <div>
-                  <p className="text-gray-600 mb-2 italic">
-                    "{testimonials[currentTestimonial].text}"
-                  </p>
-                  <div className="flex mb-2">
-                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                      <svg 
-                        key={i} 
-                        className="w-5 h-5 text-[#6e5c4f]" 
-                        fill="currentColor" 
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-zephyr-ashbrown font-bold font-['Dancing_Script'] text-1xl">
-                    - {testimonials[currentTestimonial].name}
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
