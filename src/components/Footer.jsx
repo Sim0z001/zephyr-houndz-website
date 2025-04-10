@@ -26,7 +26,36 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          {/* Rest of the footer remains the same */}
+
+          {/* Social Media Links */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-zephyr-ashbrown">Connect With Us</h3>
+            <div className="space-y-2">
+              <p className="flex items-center">
+                <Facebook className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                <a href="https://www.facebook.com/profile.php?id=61567924250405" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  Facebook
+                </a>
+              </p>
+              <p className="flex items-center">
+                <Instagram className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                <a href="https://www.instagram.com/zephyr.houndz/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  Instagram
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Hours or Additional Info */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-zephyr-ashbrown">Hours</h3>
+            <div className="space-y-2">
+              <p className="flex items-center">
+                <Clock className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                By Appointment Only
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

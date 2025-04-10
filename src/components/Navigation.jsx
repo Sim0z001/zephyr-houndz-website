@@ -47,6 +47,12 @@ const Navigation = () => {
             Gallery
           </a>
           <a 
+            href="/portraits" 
+            className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors flex items-center h-full"
+          >
+            Portraits
+          </a>
+          <a 
             href="/about" 
             className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors flex items-center h-full"
           >
@@ -106,6 +112,14 @@ const Navigation = () => {
               >
                 Gallery
               </a>
+              <a 
+                href="/portraits" 
+                className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Portraits
+              </a>
+
               <a 
                 href="/about" 
                 className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors"

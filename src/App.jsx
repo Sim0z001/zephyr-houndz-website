@@ -7,6 +7,8 @@ import Gallery from './pages/Gallery'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Booking from './pages/Booking'
+import Portraits from './pages/Portraits';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/portraits" element={<Portraits />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/booking" element={<Booking />} />
