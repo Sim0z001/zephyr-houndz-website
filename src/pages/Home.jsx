@@ -1,11 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination, Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Home = () => {
   const heroImages = [
@@ -19,8 +20,14 @@ const Home = () => {
 
   const promotions = [
     {
+      title: 'Custom Pet Portraits 🎨',
+      description: 'Celebrate your furry friend with a custom watercolour portrait by Megan from Zephyr Palette. Hand-painted with love on premium paper, perfect as a gift or keepsake.',
+      buttonText: 'View Portraits',
+      buttonLink: '/portraits'
+    },
+    {
       title: 'Refer a Friend',
-      description: "Spread the love for your furry friends and enjoy the rewards. Refer a friend and you'll receive $10 off coupon per referal.",
+      description: "Spread the love for your furry friends and enjoy the rewards. Refer a friend and you'll receive $10 off coupon per referral.",
       buttonText: 'Learn More',
       buttonLink: 'https://www.facebook.com/share/p/1A8YkKcpCa/'
     },
@@ -57,7 +64,6 @@ const Home = () => {
             <SwiperSlide key={index} className="relative">
               <div className="absolute inset-0 z-0 flex items-center justify-center">
                 {index === heroImages.length - 1 ? (
-                  // Logo slide
                   <div className="w-full h-full bg-page-background flex items-center">
                     <div className="w-1/2 h-full flex items-center justify-center ml-0">
                       <img 
@@ -68,7 +74,6 @@ const Home = () => {
                     </div>
                   </div>
                 ) : (
-                  // Regular image slides
                   <>
                     <img 
                       src={image} 
@@ -91,8 +96,7 @@ const Home = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
             Zephyr Houndz Dog Grooming
           </h1>
-          
-          {/* Contact and Location */}
+
           <div className="flex justify-center items-center space-x-4 sm:space-x-6 mb-8 flex-wrap">
             <div className="flex items-center mb-2 sm:mb-0">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,7 +118,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Book Now Button */}
           <a 
             href="/booking" 
             className="inline-block bg-zephyr-mint text-zephyr-ashbrown px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold 
@@ -143,7 +146,7 @@ const Home = () => {
       <section className="relative z-10 bg-zephyr-mint bg-opacity-20 py-8 md:py-12">
         <div className="container mx-auto px-4 max-w-4xl">
           <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay, Pagination, Navigation]}
             spaceBetween={30}
             slidesPerView={1}
             pagination={{ 
@@ -154,16 +157,17 @@ const Home = () => {
               delay: 5000,
               disableOnInteraction: false,
             }}
+            navigation={true}
             loop={true}
             className="promotions-swiper"
           >
             {promotions.map((promo, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-3xl shadow-lg p-6 md:p-8">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-zephyr-ashbrown text-center mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-zephyr-ashbrown text-center mb-4 max-w-xl mx-auto">
                     {promo.title}
                   </h2>
-                  <p className="text-sm sm:text-base text-zephyr-ashbrown text-center mb-4">
+                  <p className="text-sm sm:text-base text-zephyr-ashbrown text-center mb-4 max-w-2xl mx-auto">
                     {promo.description}
                   </p>
                   <div className="text-center">

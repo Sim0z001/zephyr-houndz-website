@@ -6,6 +6,7 @@ const Footer = () => {
     <footer className="bg-zephyr-mint text-gray-800 py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-zephyr-ashbrown">Contact Info</h3>
             <div className="space-y-2">
@@ -22,7 +23,8 @@ const Footer = () => {
                 </a>
               </p>
               <p className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2 text-zephyr-ashbrown" /> Mountain Creek, Sunshine Coast
+                <MapPin className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                Mountain Creek, Sunshine Coast
               </p>
             </div>
           </div>
@@ -37,12 +39,30 @@ const Footer = () => {
                   Facebook
                 </a>
               </p>
-              <p className="flex items-center">
-                <Instagram className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
-                <a href="https://www.instagram.com/zephyr.houndz/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  Instagram
-                </a>
-              </p>
+              <div className="flex items-center space-x-4">
+                <p className="flex items-center">
+                  <Instagram className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                  <a
+                    href="https://www.instagram.com/zephyr.houndz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    @zephyr.houndz
+                  </a>
+                </p>
+                <p className="flex items-center">
+                  <Instagram className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+                  <a
+                    href="https://www.instagram.com/zephyr.palette"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    @zephyr.palette
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
 
