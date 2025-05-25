@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,8 +74,17 @@ const Navigation = () => {
             focus:ring-zephyr-mint"
           >
             Book Now
-          </a>
-        </div>
+            </a>
+
+            {/* Phone Number Styled Like Footer */}
+            <a 
+              href="tel:0475455654" 
+              className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors flex items-center h-full hover:underline"
+            >
+              <Phone className="w-4 h-4 mr-2 text-zephyr-ashbrown" />
+              0475 455 654
+            </a>
+            </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -146,6 +155,21 @@ const Navigation = () => {
               >
                 Book Now
               </a>
+
+              {/* Call Button for Mobile */}
+              <a
+              href="tel:0475455654"
+              className="bg-zephyr-mint text-zephyr-ashbrown px-4 py-2 rounded-full font-bold 
+                text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 
+                hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                focus:ring-zephyr-mint flex items-center"
+              onClick={closeMobileMenu}
+            >
+              <Phone className="w-4 h-4 mr-2" />
+              Call Now
+            </a>
+
+
             </div>
           </div>
         )}
