@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zephyrhoundz.com.au/sitemap.xml
