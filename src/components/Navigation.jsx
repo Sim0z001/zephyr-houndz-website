@@ -64,6 +64,13 @@ const Navigation = () => {
           >
             Contact
           </a>
+          <a 
+            href="/shop" 
+            className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors flex items-center h-full"
+          >
+            Shop
+          </a>
+
           
           {/* Book Now Button */}
           <a 
@@ -143,6 +150,14 @@ const Navigation = () => {
               >
                 Contact
               </a>
+              <a 
+                href="/shop" 
+                className="text-zephyr-ashbrown hover:text-opacity-80 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Shop
+              </a>
+
               
               {/* Book Now Button */}
               <a 

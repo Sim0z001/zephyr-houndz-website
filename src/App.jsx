@@ -7,7 +7,9 @@ import Gallery from './pages/Gallery'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Booking from './pages/Booking'
-import Portraits from './pages/Portraits';
+import Portraits from './pages/Portraits'
+import Shop from './pages/Shop';
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
           <Route path="/portraits" element={<Portraits />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
       </Layout>

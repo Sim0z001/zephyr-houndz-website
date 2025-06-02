@@ -17,7 +17,9 @@ const routes = [
   '/booking',
   '/contact',
   '/gallery',
-  '/services'
+  '/services',
+  '/portraits',
+  '/shop'
 ];
 
 // Generate the XML content
