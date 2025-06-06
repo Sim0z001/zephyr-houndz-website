@@ -20,18 +20,23 @@ const Services = () => {
             <img 
               src="/images/services/price-list-1.webp" 
               alt="Zephyr Houndz Full Groom and Tidy Groom Price List" 
+              width="828"
+              height="970"
               className="w-full h-auto rounded-2xl"
             />
           </div>
-          
+
           {/* Second Price List Image */}
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <img 
               src="/images/services/price-list-2.webp" 
               alt="Zephyr Houndz Bath Services and Add-on Price List" 
+              width="828"
+              height="738"
               className="w-full h-auto rounded-2xl"
             />
           </div>
+
           
           <p className="text-center mt-6 text-zephyr-ashbrown font-medium italic">
             Coat condition and pricing will be double checked upon arrival
