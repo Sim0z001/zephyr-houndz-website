@@ -9,31 +9,31 @@ const Gallery = () => {
       name: 'Sophie Gower', 
       text: 'Megan is one of the best groomers by far!! Highly recommend. She has the kindest soul and cares about every single dog like they are her own.', 
       rating: 5,
-      image: '/images/testimonials/sophie-gower.jpg'
+      image: '/images/testimonials/sophie-gower.webp'
     },
     { 
       name: 'Alice Leeson', 
       text: 'Megan did an amazing job on my almost 19-year-old dog, who has struggled with grooming anxiety. Her caring and calming nature left me reassured, and my little girl looks absolutely fabulous!', 
       rating: 5,
-      image: '/images/testimonials/alice-leeson.jpg'
+      image: '/images/testimonials/alice-leeson.webp'
     },
     { 
       name: 'Mikayla Nelson', 
       text: 'Zephyr Houndz did an incredible job on my German spitz. The attentiveness and love she put into my pup\'s groom was amazing. My pup came out with a big smile and wasn\'t stressed.', 
       rating: 5,
-      image: '/images/testimonials/mikayla-nelson.jpg'
+      image: '/images/testimonials/mikayla-nelson.webp'
     },
     { 
       name: 'Alice D\'Doherty', 
       text: 'Highly recommend Zephyr Houndz! Megan is so incredible with my nervous girl. She came home looking and smelling beautiful and wasn\'t stressed at all.', 
       rating: 5,
-      image: '/images/testimonials/alice-ddoherty.jpg'
+      image: '/images/testimonials/alice-ddoherty.webp'
     },
     { 
       name: 'Taylor Clements', 
       text: 'Our pup Marley loves her fresh groom! Megan did such a great job with our Australian shepherd, we\'ve already booked the next appointment.', 
       rating: 5,
-      image: '/images/testimonials/taylor-clements.png'
+      image: '/images/testimonials/taylor-clements.webp'
     }
   ];
 
