@@ -33,22 +33,27 @@ const Portraits = () => {
         </div>
         
         {/* Sample Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
-          <div className="bg-white rounded-3xl p-4 shadow-lg flex justify-center items-center h-[420px]">
-            <img
-              src="/images/portraits/image2.webp"
-              alt="Custom Portrait 1"
-              className="max-h-full max-w-full object-contain rounded-2xl"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+            <div className="bg-white rounded-3xl p-4 shadow-lg flex justify-center items-center h-[420px]">
+              <img
+                src="/images/portraits/image2.webp"
+                alt="Custom Portrait 1"
+                width="336"
+                height="420"
+                className="max-h-full max-w-full object-contain rounded-2xl"
+              />
+            </div>
+            <div className="bg-white rounded-3xl p-4 shadow-lg flex justify-center items-center h-[420px]">
+              <img
+                src="/images/portraits/image3.webp"
+                alt="Custom Portrait 2"
+                width="336"
+                height="420"
+                className="max-h-full max-w-full object-contain rounded-2xl"
+              />
+            </div>
           </div>
-          <div className="bg-white rounded-3xl p-4 shadow-lg flex justify-center items-center h-[420px]">
-            <img
-              src="/images/portraits/image3.webp"
-              alt="Custom Portrait 2"
-              className="max-h-full max-w-full object-contain rounded-2xl"
-            />
-          </div>
-        </div>
+
 
         {/* Call to Action Buttons */}
         <div className="text-center space-y-4 mb-12">
