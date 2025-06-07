@@ -15,7 +15,10 @@ const Services = () => {
         
         {/* Price List Section */}
         <div className="max-w-4xl mx-auto mb-8">
-          {/* First Price List Image */}
+          
+          {/* 👁️ Hidden heading for screen readers */}
+          <h2 className="sr-only">Full Groom & Tidy Groom Prices</h2>
+
           <div className="bg-white rounded-3xl p-6 shadow-lg mb-8">
             <img 
               src="/images/services/price-list-1.webp" 
@@ -26,7 +29,9 @@ const Services = () => {
             />
           </div>
 
-          {/* Second Price List Image */}
+          {/* 👁️ Hidden heading for screen readers */}
+          <h2 className="sr-only">Bath & Add-on Service Prices</h2>
+
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <img 
               src="/images/services/price-list-2.webp" 
@@ -37,7 +42,6 @@ const Services = () => {
             />
           </div>
 
-          
           <p className="text-center mt-6 text-zephyr-ashbrown font-medium italic">
             Coat condition and pricing will be double checked upon arrival
           </p>
