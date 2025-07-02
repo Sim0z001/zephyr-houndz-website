@@ -44,6 +44,20 @@ const ProductLanding = () => {
       description: "Micro head, ultra soft bristles. Gentle on sensitive gums.",
       link: "https://zephyrhoundz.square.site/product/ultra-soft-pet-toothbrush/8?cs=true&cst=custom",
     },
+    {
+      name: "Slater Slicker Brush",
+      image: "/images/products/slater-brush/slater1.webp",
+      description:
+        "Professional-grade slicker brush for detangling and removing loose fur. Gentle yet effective grooming tool.",
+      link: "https://zephyrhoundz.square.site/product/slater-slicker-brush/14?cs=true&cst=custom",
+    },
+    {
+      name: "Stainless Steel Comb",
+      image: "/images/products/comb/comb1.webp",
+      description:
+        "Premium anti-static comb ideal for finishing touches. Great for fluffing, parting, and detangling fine coats.",
+      link: "https://zephyrhoundz.square.site/product/slater-stainless-comb/15?cs=true&cst=custom",
+    },
   ];
 
   const kits = [
@@ -114,13 +128,15 @@ const ProductLanding = () => {
             {petCare.map((product) => (
               <div
                 key={product.name}
-                className="border rounded-xl p-4 shadow hover:shadow-lg transition"
+                className="border rounded-xl p-4 shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-[1.02]"
               >
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
+                <div className="w-full aspect-[3/4] overflow-hidden rounded-md mb-4">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h2 className="text-xl font-bold text-zephyr-ashbrown mb-2">
                   {product.name}
                 </h2>
@@ -148,13 +164,14 @@ const ProductLanding = () => {
             {kits.map((product) => (
               <div
                 key={product.name}
-                className="border rounded-xl p-4 shadow hover:shadow-lg transition"
+                className="border rounded-xl p-4 shadow hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-[1.02]"
               >
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover rounded-md mb-4"
+                  className="w-full aspect-[3/4] object-cover rounded-md mb-4"
                 />
+
                 <h2 className="text-xl font-bold text-zephyr-ashbrown mb-2">
                   {product.name}
                 </h2>

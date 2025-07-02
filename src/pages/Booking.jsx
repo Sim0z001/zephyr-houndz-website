@@ -49,6 +49,11 @@ const Booking = () => {
                   Please select your preferred service and time. Your pet will
                   receive dedicated attention throughout their grooming session.
                 </p>
+                <p>
+                  Please note: A <strong>10% surcharge</strong> applies to all
+                  Saturday appointments.
+                </p>
+
                 <div className="bg-zephyr-mint bg-opacity-20 rounded-2xl p-6">
                   <h3 className="text-xl font-bold text-zephyr-ashbrown mb-4">
                     Before Your Appointment
