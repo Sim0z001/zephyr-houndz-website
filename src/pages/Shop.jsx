@@ -53,7 +53,7 @@ const ProductLanding = () => {
     },
     {
       name: "Stainless Steel Comb",
-      image: "/images/products/comb/comb1.webp",
+      image: "/images/products/comb/comb4.webp",
       description:
         "Premium anti-static comb ideal for finishing touches. Great for fluffing, parting, and detangling fine coats.",
       link: "https://zephyrhoundz.square.site/product/slater-stainless-comb/15?cs=true&cst=custom",
