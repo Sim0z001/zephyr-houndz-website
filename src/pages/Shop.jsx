@@ -49,14 +49,14 @@ const ProductLanding = () => {
       image: "/images/products/slater-brush/slater1.webp",
       description:
         "Professional-grade slicker brush for detangling and removing loose fur. Gentle yet effective grooming tool.",
-      link: "https://zephyrhoundz.square.site/product/slater-slicker-brush/14?cs=true&cst=custom",
+      link: "https://zephyrhoundz.square.site/product/zephyr-houndz-breed-designer-slicker-brush/64C33MYNMECXUWEWHX6UAUHN?cs=true&cst=custom",
     },
     {
       name: "Stainless Steel Comb",
       image: "/images/products/comb/comb4.webp",
       description:
         "Premium anti-static comb ideal for finishing touches. Great for fluffing, parting, and detangling fine coats.",
-      link: "https://zephyrhoundz.square.site/product/slater-stainless-comb/15?cs=true&cst=custom",
+      link: "https://zephyrhoundz.square.site/product/zephyr-houndz-premium-knife-comb/LGQELD2EUVKTTGGIXRG7IBDB?cs=true&cst=custom",
     },
   ];
 
