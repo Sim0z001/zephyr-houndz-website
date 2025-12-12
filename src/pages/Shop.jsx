@@ -8,55 +8,55 @@ const ProductLanding = () => {
       image: "/images/products/ear-wipes/earcleaner1.webp",
       description:
         "Infused with coconut oil, aloe vera & avocado extract. Gently removes wax and odors.",
-      link: "https://zephyrhoundz.square.site/product/ear-wipes-50pack-/6?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/ear-wipes-50pack-/WSL7VHXQLCPWEJZITZNR5DEQ",
     },
     {
       name: "Eye Wipes (150 pack)",
       image: "/images/products/eye-wipes/eyewipes1.webp",
       description:
         "Soft, hypoallergenic cotton wipes. Removes tear stains and dirt.",
-      link: "https://zephyrhoundz.square.site/product/eye-wipes-150-pack-/12?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/eye-wipes-150-pack-/6JWB2UPIQJ2F4SQIN5RZ6JEQ",
     },
     {
       name: "Paw Balm (60g)",
       image: "/images/products/paw-balm/pawbalm3.webp",
       description:
         "Soothes and protects dry, cracked paws with coconut oil and shea butter.",
-      link: "https://zephyrhoundz.square.site/product/paw-balm-60g-/10?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/paw-balm-60g-/IFR6JSTBMGDLXFG57G7OXMFN",
     },
     {
       name: "Ear Cleaner (50ml)",
       image: "/images/products/ear-cleaner/earcleaner3.webp",
       description:
         "Alcohol-free formula with Aloe Vera. Gently cleans and soothes ears.",
-      link: "https://zephyrhoundz.square.site/product/ear-cleaner-50ml-/11?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/gentle-ear-cleaner/QGRROXF5RGIEODQBFWEYDRKL",
     },
     {
       name: "Toothpaste (100g)",
       image: "/images/products/tooth-paste/toothpaste5.webp",
       description:
         "Mint-flavoured, fluoride-free. Helps reduce tartar and freshen breath.",
-      link: "https://zephyrhoundz.square.site/product/toothpaste-100g-/7?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/toothpaste-100g-/C55RBDJVOWFR33YQZFNZ3YRO",
     },
     {
       name: "Ultra Soft Pet Toothbrush",
       image: "/images/products/toothbrush/toothbrush3.webp",
       description: "Micro head, ultra soft bristles. Gentle on sensitive gums.",
-      link: "https://zephyrhoundz.square.site/product/ultra-soft-pet-toothbrush/8?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/10-000-bristle-ultra-soft-pet-toothbrush/KGVGHIWJCG6SNQBP2ZGSMW5W",
     },
     {
       name: "Slater Slicker Brush",
       image: "/images/products/slater-brush/slater1.webp",
       description:
         "Professional-grade slicker brush for detangling and removing loose fur. Gentle yet effective grooming tool.",
-      link: "https://zephyrhoundz.square.site/product/zephyr-houndz-breed-designer-slicker-brush/64C33MYNMECXUWEWHX6UAUHN?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/zephyr-houndz-breed-designer-slicker-brush/JZLWVEA3HV52H6ZDRSZG5KN7",
     },
     {
       name: "Stainless Steel Comb",
       image: "/images/products/comb/comb4.webp",
       description:
         "Premium anti-static comb ideal for finishing touches. Great for fluffing, parting, and detangling fine coats.",
-      link: "https://zephyrhoundz.square.site/product/zephyr-houndz-premium-knife-comb/LGQELD2EUVKTTGGIXRG7IBDB?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/zephyr-houndz-premium-knife-comb/K5PECDOWBSMTJUQ245YC3CGP",
     },
   ];
 
@@ -66,14 +66,14 @@ const ProductLanding = () => {
       image: "/images/products/wipe-kit/wipekit1.webp",
       description:
         "Bundle with 1x ear wipes + 1x eye wipes. Natural, alcohol-free.",
-      link: "https://zephyrhoundz.square.site/product/ear-and-eye-wipes-kit-2-pack-/13?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/ear-and-eye-wipes-kit-2-pack-/IQUMDUULUHTOIPMIXLS7QFUY",
     },
     {
       name: "Dental Care Kit (Toothpaste + Toothbrush)",
       image: "/images/products/dental-kit/dentalkit2.webp",
       description:
         "Complete set with mint toothpaste + soft brush. Fights tartar & freshens breath.",
-      link: "https://zephyrhoundz.square.site/product/dental-care-kit-toothpaste-toothbrush-/9?cs=true&cst=custom",
+      link: "https://zephyr-houndz-pty-ltd.square.site/product/dental-care-kit-toothpaste-toothbrush-/VJMUF7VMNCK6BHITFO2SVPSZ",
     },
   ];
 
