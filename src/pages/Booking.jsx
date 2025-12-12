@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 const Booking = () => {
   // Your Square booking URL
   const squareBookingUrl =
-    "https://square.site/book/LFKG5CXVHPBDC/zephyr-houndz";
+    "https://book.squareup.com/appointments/qfk9ct6k3d730j/location/L3DKH5PSAHFGS/services";
 
   return (
     <>
