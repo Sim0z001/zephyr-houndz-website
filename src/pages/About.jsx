@@ -109,65 +109,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Team Member Section */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                <div>
-                  <h2 className="text-3xl font-bold text-zephyr-ashbrown mb-4">
-                    Bath & Prep Expert
-                  </h2>
-                  <h2 className="text-2xl font-bold text-zephyr-ashbrown mb-4">
-                    Simon
-                  </h2>
-                  <p className="text-gray-700 mb-4">
-                    I’ve grown up with dogs my whole life and currently have a
-                    Dutch Shepherd. With experience handling dogs of all breeds
-                    and sizes, I’m passionate about dog training and animal
-                    welfare. Specializing in bathing, prepping, and deshedding,
-                    I have a deep understanding of double and triple-coated
-                    breeds, ensuring their natural coat remains undamaged. I pay
-                    attention to detail and always create a friendly, welcoming
-                    environment for both pets and their owners.
-                  </p>
 
-                  <div className="bg-zephyr-mint bg-opacity-20 rounded-2xl p-6 mb-4">
-                    <h3 className="text-xl font-bold text-zephyr-ashbrown mb-3">
-                      My Expertise
-                    </h3>
-                    <ul className="space-y-2 text-gray-700">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-zephyr-mint rounded-full mr-2"></span>
-                        Double and Triple Coat Expertise
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-zephyr-mint rounded-full mr-2"></span>
-                        Dog Handling and Calming Techniques
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-zephyr-mint rounded-full mr-2"></span>
-                        Comprehensive Dog Care
-                      </li>
-                    </ul>
-                  </div>
-                  <p className="text-gray-700">
-                    I'm dedicated to providing the highest quality care,
-                    ensuring every dog feels comfortable and leaves looking and
-                    feeling their best.
-                  </p>
-                </div>
-                <div className="relative mt-6">
-                  <div className="aspect-square rounded-3xl overflow-hidden shadow-lg">
-                    <img
-                      src="/images/about/simon-profile.webp"
-                      alt="Team Member - Bath Specialist"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Existing Furry Family section */}
           <div className="max-w-4xl mx-auto pb-16">
